@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaco Comparte</title>
+    <link rel="stylesheet" href="../CSS/inicio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <a href="#" class="marca">
+            <div class="logo">
+                <svg viewBox="0 0 100 80" role="img" aria-label="Logo Chaco Comparte">
+                    <polygon points="5,31 35,3 53,30 28,58"
+                             fill="#287b78" stroke="#203c2a" stroke-width="2"/>
+                    <polygon points="35,3 72,27 53,30"
+                             fill="#d9a64b" stroke="#203c2a" stroke-width="2"/>
+                    <polygon points="28,58 53,30 48,69 20,69"
+                             fill="#7e9d45" stroke="#203c2a" stroke-width="2"/>
+                    <polygon points="53,30 72,27 48,69"
+                             fill="#d9a64b" stroke="#203c2a" stroke-width="2"/>
+                    <path d="M54 57 L65 47 L75 49 L85 60 L79 68 L67 63 L59 66 Z"
+                          fill="#e9c49b" stroke="#203c2a" stroke-width="2"
+                          stroke-linejoin="round"/>
+                    <path d="M64 55 L73 61 M69 52 L79 59 M74 50 L84 57"
+                          stroke="#203c2a" stroke-width="1.5" fill="none"/>
+                </svg>
+            </div>
+
+            <span class="marca-texto">
+                CHACO
+                <strong>COMPARTE</strong>
+            </span>
+        </a>
+
+        <a href="#" class="boton-login">
+            Iniciar Sesión / Registro
+        </a>
+    </header>
+
+    <main class="contenido">
+
+        <section class="presentacion">
+            <div class="presentacion-texto">
+                <h1>
+                    VIAJAMOS JUNTOS/
+                    <span>COMPARTIMOS</span>
+                </h1>
+
+                <div class="acciones">
+                    <a href="#" class="boton boton-azul">
+                        <span class="icono-auto">🚘</span>
+                        PUBLICÁ TU VIAJE
+                    </a>
+
+                    <a href="#" class="boton boton-amarillo">
+                        <span class="icono-persona">👤</span>
+                        BUSCO UN VIAJE
+                    </a>
+                </div>
+            </div>
+
+            <section class="mapa-seccion" aria-label="Viajes activos en Chaco">
+                <h2>VIAJES ACTIVOS<br>EN CHACO</h2>
+
+                <div class="mapa">
+
+                    <!-- Mapa ilustrativo de la provincia -->
+                    <svg class="mapa-base"
+                         viewBox="0 0 500 510"
+                         role="img"
+                         aria-label="Mapa ilustrativo de la provincia del Chaco">
+
+                        <path class="provincia"
+                              d="M178 27
+                                 L198 45 L213 53 L224 70
+                                 L247 83 L260 102 L281 112
+                                 L297 136 L319 149 L332 173
+                                 L355 192 L373 214 L367 232
+                                 L350 247 L344 272 L330 286
+                                 L326 316 L312 337 L300 367
+                                 L280 389 L274 421 L284 445
+                                 L276 469 L282 495
+                                 L247 483 L224 490 L201 476
+                                 L183 481 L163 465 L137 467
+                                 L125 451 L98 445 L83 425
+                                 L65 421 L53 401 L32 397
+                                 L25 376 L34 352 L43 327
+                                 L48 301 L39 281 L51 260
+                                 L47 239 L62 221 L64 199
+                                 L80 185 L86 162 L103 152
+                                 L119 127 L140 106 L155 80
+                                 L168 57 Z"
+                              transform="translate(10 0) scale(.92 1)"
+                              fill="#fffefa"
+                              stroke="#263f2c"
+                              stroke-width="2.2"
+                              stroke-linejoin="round"/>
+
+                        <path class="limite"
+                              d="M108 158 L232 158 L232 329
+                                 L350 329 M232 329 L225 482
+                                 M108 158 L87 210"
+                              fill="none"/>
+
+                        <!-- Rutas -->
+                        <g class="rutas">
+                            <path d="M230 116 L160 196 L365 272 L280 392 L365 272 L280 180"/>
+                            <path d="M160 196 L282 276 L365 272"/>
+                            <path d="M110 300 L280 392 L365 272"/>
+                            <path d="M280 392 Q340 425 350 350 L365 272"/>
+                            <path d="M280 276 L365 272 L280 180"/>
+                        </g>
+
+                        <!-- Marcadores -->
+                        <g class="marcador marcador-dorado">
+                            <circle cx="160" cy="196" r="7"/>
+                            <path d="M160 203 L155 195 L165 195 Z"/>
+                            <circle cx="160" cy="196" r="2.5" fill="#263f2c"/>
+                        </g>
+
+                        <g class="marcador marcador-dorado">
+                            <circle cx="230" cy="116" r="7"/>
+                            <path d="M230 123 L225 115 L235 115 Z"/>
+                            <circle cx="230" cy="116" r="2.5" fill="#263f2c"/>
+                        </g>
+
+                        <g class="marcador marcador-dorado">
+                            <circle cx="280" cy="180" r="7"/>
+                            <path d="M280 187 L275 179 L285 179 Z"/>
+                            <circle cx="280" cy="180" r="2.5" fill="#263f2c"/>
+                        </g>
+
+                        <g class="marcador marcador-azul">
+                            <circle cx="365" cy="272" r="7"/>
+                            <circle cx="365" cy="272" r="2.5" fill="#263f2c"/>
+                        </g>
+
+                        <g class="marcador marcador-dorado">
+                            <circle cx="280" cy="392" r="7"/>
+                            <path d="M280 399 L275 391 L285 391 Z"/>
+                            <circle cx="280" cy="392" r="2.5" fill="#263f2c"/>
+                        </g>
+
+                        <g class="marcador marcador-azul">
+                            <circle cx="110" cy="300" r="7"/>
+                            <path d="M110 307 L105 299 L115 299 Z"/>
+                        </g>
+
+                        <!-- Autos -->
+                        <g class="auto-mapa" transform="translate(116 182)">
+                            <rect x="0" y="5" width="25" height="11" rx="4"/>
+                            <path d="M5 5 L9 0 H18 L22 5"/>
+                            <circle cx="6" cy="16" r="3"/>
+                            <circle cx="20" cy="16" r="3"/>
+                        </g>
+
+                        <g class="auto-mapa" transform="translate(310 245)">
+                            <rect x="0" y="5" width="25" height="11" rx="4"/>
+                            <path d="M5 5 L9 0 H18 L22 5"/>
+                            <circle cx="6" cy="16" r="3"/>
+                            <circle cx="20" cy="16" r="3"/>
+                        </g>
+
+                        <g class="auto-mapa" transform="translate(260 258)">
+                            <rect x="0" y="5" width="25" height="11" rx="4"/>
+                            <path d="M5 5 L9 0 H18 L22 5"/>
+                            <circle cx="6" cy="16" r="3"/>
+                            <circle cx="20" cy="16" r="3"/>
+                        </g>
+
+                        <g class="auto-mapa" transform="translate(265 374)">
+                            <rect x="0" y="5" width="25" height="11" rx="4"/>
+                            <path d="M5 5 L9 0 H18 L22 5"/>
+                            <circle cx="6" cy="16" r="3"/>
+                            <circle cx="20" cy="16" r="3"/>
+                        </g>
+
+                        <g class="auto-mapa" transform="translate(120 290)">
+                            <rect x="0" y="5" width="25" height="11" rx="4"/>
+                            <path d="M5 5 L9 0 H18 L22 5"/>
+                            <circle cx="6" cy="16" r="3"/>
+                            <circle cx="20" cy="16" r="3"/>
+                        </g>
+
+                        <!-- Localidades -->
+                        <g class="localidades">
+                            <text x="135" y="216">Charata</text>
+                            <text x="205" y="103">Charata</text>
+                            <text x="251" y="165">Sáenz</text>
+                            <text x="251" y="180">Peña</text>
+                            <text x="375" y="267">Resistencia</text>
+                            <text x="234" y="420">Moca</text>
+                        </g>
+
+                    </svg>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <div class="pie-marca">
+            <span></span>
+            <p>CHAC_COMP © 2026</p>
+            <span></span>
+        </div>
+
+        <nav class="pie-enlaces" aria-label="Enlaces del pie de página">
+            <a href="#nosotros">Sobre nosotros</a>
+            <a href="#terminos">Términos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
