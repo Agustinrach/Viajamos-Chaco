@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chaco Comparte</title>
+
     <link rel="stylesheet" href="../CSS/inicio.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,18 +19,18 @@
             <div class="logo">
                 <svg viewBox="0 0 100 80" role="img" aria-label="Logo Chaco Comparte">
                     <polygon points="5,31 35,3 53,30 28,58"
-                             fill="#287b78" stroke="#203c2a" stroke-width="2"/>
+                        fill="#287b78" stroke="#203c2a" stroke-width="2"/>
                     <polygon points="35,3 72,27 53,30"
-                             fill="#d9a64b" stroke="#203c2a" stroke-width="2"/>
+                        fill="#d9a64b" stroke="#203c2a" stroke-width="2"/>
                     <polygon points="28,58 53,30 48,69 20,69"
-                             fill="#7e9d45" stroke="#203c2a" stroke-width="2"/>
+                        fill="#7e9d45" stroke="#203c2a" stroke-width="2"/>
                     <polygon points="53,30 72,27 48,69"
-                             fill="#d9a64b" stroke="#203c2a" stroke-width="2"/>
+                        fill="#d9a64b" stroke="#203c2a" stroke-width="2"/>
                     <path d="M54 57 L65 47 L75 49 L85 60 L79 68 L67 63 L59 66 Z"
-                          fill="#e9c49b" stroke="#203c2a" stroke-width="2"
-                          stroke-linejoin="round"/>
+                        fill="#e9c49b" stroke="#203c2a" stroke-width="2"
+                        stroke-linejoin="round"/>
                     <path d="M64 55 L73 61 M69 52 L79 59 M74 50 L84 57"
-                          stroke="#203c2a" stroke-width="1.5" fill="none"/>
+                        stroke="#203c2a" stroke-width="1.5" fill="none"/>
                 </svg>
             </div>
 
@@ -40,14 +40,15 @@
             </span>
         </a>
 
-        <a href="#" class="boton-login">
+        <button type="button" class="boton-login" id="abrir-login">
             Iniciar Sesión / Registro
-        </a>
+        </button>
     </header>
 
     <main class="contenido">
 
         <section class="presentacion">
+
             <div class="presentacion-texto">
                 <h1>
                     VIAJAMOS JUNTOS/
@@ -55,12 +56,12 @@
                 </h1>
 
                 <div class="acciones">
-                    <a href="#" class="boton boton-azul">
+                    <a href="#" class="boton boton-azul" id="abrir-publicar">
                         <span class="icono-auto">🚘</span>
                         PUBLICÁ TU VIAJE
                     </a>
 
-                    <a href="#" class="boton boton-amarillo">
+                    <a href="#" class="boton boton-amarillo" id="abrir-buscar">
                         <span class="icono-persona">👤</span>
                         BUSCO UN VIAJE
                     </a>
@@ -71,140 +72,15 @@
                 <h2>VIAJES ACTIVOS<br>EN CHACO</h2>
 
                 <div class="mapa">
-
-                    <!-- Mapa ilustrativo de la provincia -->
-                    <svg class="mapa-base"
-                         viewBox="0 0 500 510"
-                         role="img"
-                         aria-label="Mapa ilustrativo de la provincia del Chaco">
-
-                        <path class="provincia"
-                              d="M178 27
-                                 L198 45 L213 53 L224 70
-                                 L247 83 L260 102 L281 112
-                                 L297 136 L319 149 L332 173
-                                 L355 192 L373 214 L367 232
-                                 L350 247 L344 272 L330 286
-                                 L326 316 L312 337 L300 367
-                                 L280 389 L274 421 L284 445
-                                 L276 469 L282 495
-                                 L247 483 L224 490 L201 476
-                                 L183 481 L163 465 L137 467
-                                 L125 451 L98 445 L83 425
-                                 L65 421 L53 401 L32 397
-                                 L25 376 L34 352 L43 327
-                                 L48 301 L39 281 L51 260
-                                 L47 239 L62 221 L64 199
-                                 L80 185 L86 162 L103 152
-                                 L119 127 L140 106 L155 80
-                                 L168 57 Z"
-                              transform="translate(10 0) scale(.92 1)"
-                              fill="#fffefa"
-                              stroke="#263f2c"
-                              stroke-width="2.2"
-                              stroke-linejoin="round"/>
-
-                        <path class="limite"
-                              d="M108 158 L232 158 L232 329
-                                 L350 329 M232 329 L225 482
-                                 M108 158 L87 210"
-                              fill="none"/>
-
-                        <!-- Rutas -->
-                        <g class="rutas">
-                            <path d="M230 116 L160 196 L365 272 L280 392 L365 272 L280 180"/>
-                            <path d="M160 196 L282 276 L365 272"/>
-                            <path d="M110 300 L280 392 L365 272"/>
-                            <path d="M280 392 Q340 425 350 350 L365 272"/>
-                            <path d="M280 276 L365 272 L280 180"/>
-                        </g>
-
-                        <!-- Marcadores -->
-                        <g class="marcador marcador-dorado">
-                            <circle cx="160" cy="196" r="7"/>
-                            <path d="M160 203 L155 195 L165 195 Z"/>
-                            <circle cx="160" cy="196" r="2.5" fill="#263f2c"/>
-                        </g>
-
-                        <g class="marcador marcador-dorado">
-                            <circle cx="230" cy="116" r="7"/>
-                            <path d="M230 123 L225 115 L235 115 Z"/>
-                            <circle cx="230" cy="116" r="2.5" fill="#263f2c"/>
-                        </g>
-
-                        <g class="marcador marcador-dorado">
-                            <circle cx="280" cy="180" r="7"/>
-                            <path d="M280 187 L275 179 L285 179 Z"/>
-                            <circle cx="280" cy="180" r="2.5" fill="#263f2c"/>
-                        </g>
-
-                        <g class="marcador marcador-azul">
-                            <circle cx="365" cy="272" r="7"/>
-                            <circle cx="365" cy="272" r="2.5" fill="#263f2c"/>
-                        </g>
-
-                        <g class="marcador marcador-dorado">
-                            <circle cx="280" cy="392" r="7"/>
-                            <path d="M280 399 L275 391 L285 391 Z"/>
-                            <circle cx="280" cy="392" r="2.5" fill="#263f2c"/>
-                        </g>
-
-                        <g class="marcador marcador-azul">
-                            <circle cx="110" cy="300" r="7"/>
-                            <path d="M110 307 L105 299 L115 299 Z"/>
-                        </g>
-
-                        <!-- Autos -->
-                        <g class="auto-mapa" transform="translate(116 182)">
-                            <rect x="0" y="5" width="25" height="11" rx="4"/>
-                            <path d="M5 5 L9 0 H18 L22 5"/>
-                            <circle cx="6" cy="16" r="3"/>
-                            <circle cx="20" cy="16" r="3"/>
-                        </g>
-
-                        <g class="auto-mapa" transform="translate(310 245)">
-                            <rect x="0" y="5" width="25" height="11" rx="4"/>
-                            <path d="M5 5 L9 0 H18 L22 5"/>
-                            <circle cx="6" cy="16" r="3"/>
-                            <circle cx="20" cy="16" r="3"/>
-                        </g>
-
-                        <g class="auto-mapa" transform="translate(260 258)">
-                            <rect x="0" y="5" width="25" height="11" rx="4"/>
-                            <path d="M5 5 L9 0 H18 L22 5"/>
-                            <circle cx="6" cy="16" r="3"/>
-                            <circle cx="20" cy="16" r="3"/>
-                        </g>
-
-                        <g class="auto-mapa" transform="translate(265 374)">
-                            <rect x="0" y="5" width="25" height="11" rx="4"/>
-                            <path d="M5 5 L9 0 H18 L22 5"/>
-                            <circle cx="6" cy="16" r="3"/>
-                            <circle cx="20" cy="16" r="3"/>
-                        </g>
-
-                        <g class="auto-mapa" transform="translate(120 290)">
-                            <rect x="0" y="5" width="25" height="11" rx="4"/>
-                            <path d="M5 5 L9 0 H18 L22 5"/>
-                            <circle cx="6" cy="16" r="3"/>
-                            <circle cx="20" cy="16" r="3"/>
-                        </g>
-
-                        <!-- Localidades -->
-                        <g class="localidades">
-                            <text x="135" y="216">Charata</text>
-                            <text x="205" y="103">Charata</text>
-                            <text x="251" y="165">Sáenz</text>
-                            <text x="251" y="180">Peña</text>
-                            <text x="375" y="267">Resistencia</text>
-                            <text x="234" y="420">Moca</text>
-                        </g>
-
-                    </svg>
+                    <img
+                        class="mapa-base"
+                        src="https://raw.githubusercontent.com/Agustinrach/Viajamos-Chaco/Mateo/Gemini_Generated_Image_4dppph4dppph4dpp.jpg"
+                        alt="Mapa de rutas y destinos de la provincia del Chaco"
+                        loading="eager">
                 </div>
             </section>
-        </section>
 
+        </section>
     </main>
 
     <footer class="pie">
@@ -215,11 +91,487 @@
         </div>
 
         <nav class="pie-enlaces" aria-label="Enlaces del pie de página">
-            <a href="#nosotros">Sobre nosotros</a>
+            <a href="sobre-nosotros.html">Sobre nosotros</a>
             <a href="#terminos">Términos</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </footer>
+
+
+    <!-- VENTANA DE INICIO DE SESIÓN -->
+    <div class="modal-login" id="modal-login" aria-hidden="true">
+
+        <div class="login-contenedor" role="dialog"
+            aria-modal="true" aria-labelledby="titulo-login">
+
+            <button type="button" class="cerrar-login"
+                id="cerrar-login" aria-label="Cerrar ventana">
+                &times;
+            </button>
+
+            <div class="login-logo">
+                <h2>CHACO <strong>COMPARTE</strong></h2>
+                <p>Viajamos juntos, compartimos.</p>
+            </div>
+
+            <div class="login-pestanas">
+                <button type="button" class="pestana activa"
+                    id="pestana-iniciar">
+                    Iniciar sesión
+                </button>
+
+                <button type="button" class="pestana"
+                    id="pestana-registro">
+                    Registrarse
+                </button>
+            </div>
+
+            <!-- FORMULARIO DE INICIO DE SESIÓN -->
+            <form id="form-login">
+
+                <h3 id="titulo-login">¡Bienvenido nuevamente!</h3>
+                <p class="login-descripcion">
+                    Ingresá a tu cuenta de Chaco Comparte.
+                </p>
+
+                <label for="correo-login">Correo electrónico</label>
+                <input type="email" id="correo-login"
+                    placeholder="ejemplo@correo.com" required>
+
+                <label for="clave-login">Contraseña</label>
+
+                <div class="campo-clave">
+                    <input type="password" id="clave-login"
+                        placeholder="Ingresá tu contraseña" required>
+                    <button type="button" class="ver-clave"
+                        data-target="clave-login">Ver</button>
+                </div>
+
+                <button type="submit" class="boton-enviar">
+                    Iniciar sesión
+                </button>
+
+                <p class="mensaje-formulario" id="mensaje-login"
+                    aria-live="polite"></p>
+
+            </form>
+
+            <!-- FORMULARIO DE REGISTRO -->
+            <form id="form-registro" hidden>
+
+                <h3>¡Unite a Chaco Comparte!</h3>
+                <p class="login-descripcion">
+                    Creá tu cuenta para comenzar a viajar.
+                </p>
+
+                <label for="nombre-registro">Nombre completo</label>
+                <input type="text" id="nombre-registro"
+                    placeholder="Tu nombre" required>
+
+                <label for="correo-registro">Correo electrónico</label>
+                <input type="email" id="correo-registro"
+                    placeholder="ejemplo@correo.com" required>
+
+                <label for="clave-registro">Contraseña</label>
+
+                <div class="campo-clave">
+                    <input type="password" id="clave-registro"
+                        placeholder="Creá una contraseña" minlength="8" required>
+                    <button type="button" class="ver-clave"
+                        data-target="clave-registro">Ver</button>
+                </div>
+
+                <button type="submit" class="boton-enviar">
+                    Crear cuenta
+                </button>
+
+                <p class="mensaje-formulario" id="mensaje-registro"
+                    aria-live="polite"></p>
+
+            </form>
+
+            <p class="login-seguridad">
+                Tu comunidad de viajes compartidos.
+            </p>
+
+        </div>
+    </div>
+
+
+
+    <!-- VENTANA PARA PUBLICAR UN VIAJE -->
+    <div class="modal-viaje" id="modal-publicar" aria-hidden="true">
+        <div class="panel-viaje" role="dialog" aria-modal="true" aria-labelledby="titulo-publicar">
+            <button type="button" class="cerrar-viaje" data-cerrar="modal-publicar" aria-label="Cerrar">×</button>
+            <h2 id="titulo-publicar">PUBLICÁ TU VIAJE</h2>
+            <p class="descripcion-viaje">Completá los datos de tu recorrido.</p>
+
+            <form id="form-publicar">
+                <label for="nombre-conductor">Nombre del conductor</label>
+                <input id="nombre-conductor" type="text" maxlength="60" required>
+
+                <label for="origen-viaje">Lugar de salida</label>
+                <select id="origen-viaje" required>
+                    <option value="">Seleccioná el origen</option>
+                    <option>Resistencia</option>
+                    <option>Presidencia Roque Sáenz Peña</option>
+                    <option>Charata</option>
+                    <option>Villa Ángela</option>
+                    <option>General San Martín</option>
+                    <option>Juan José Castelli</option>
+                    <option>Machagai</option>
+                    <option>Quitilipi</option>
+                    <option>Las Breñas</option>
+                    <option>Otra localidad</option>
+                </select>
+
+                <label for="destino-viaje">Lugar de destino</label>
+                <select id="destino-viaje" required>
+                    <option value="">Seleccioná el destino</option>
+                    <option>Resistencia</option>
+                    <option>Presidencia Roque Sáenz Peña</option>
+                    <option>Charata</option>
+                    <option>Villa Ángela</option>
+                    <option>General San Martín</option>
+                    <option>Juan José Castelli</option>
+                    <option>Machagai</option>
+                    <option>Quitilipi</option>
+                    <option>Las Breñas</option>
+                    <option>Otra localidad</option>
+                </select>
+
+                <label for="fecha-viaje">Fecha del viaje</label>
+                <input id="fecha-viaje" type="date" required>
+
+                <label for="hora-viaje">Horario de salida</label>
+                <input id="hora-viaje" type="time" required>
+
+                <label for="asientos-viaje">Asientos disponibles</label>
+                <input id="asientos-viaje" type="number" min="1" max="8" required>
+
+                <label for="precio-viaje">Precio por pasajero ($)</label>
+                <input id="precio-viaje" type="number" min="0" step="1" required>
+
+                <label for="detalles-viaje">Información adicional</label>
+                <textarea id="detalles-viaje" rows="3" maxlength="300"
+                    placeholder="Detalles del recorrido (opcional)"></textarea>
+
+                <button type="submit" class="boton-enviar-viaje">PUBLICAR VIAJE</button>
+                <p class="mensaje-viaje" id="mensaje-publicar" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- VENTANA PARA BUSCAR VIAJES PUBLICADOS -->
+    <div class="modal-viaje" id="modal-buscar" aria-hidden="true">
+        <div class="panel-viaje" role="dialog" aria-modal="true" aria-labelledby="titulo-buscar">
+            <button type="button" class="cerrar-viaje" data-cerrar="modal-buscar" aria-label="Cerrar">×</button>
+            <h2 id="titulo-buscar">VIAJES DISPONIBLES</h2>
+            <p class="descripcion-viaje">Viajes publicados desde este navegador.</p>
+            <div id="lista-viajes">
+                <p class="sin-viajes">Todavía no hay viajes publicados.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ELEMENTOS PRINCIPALES
+        const modal = document.getElementById("modal-login");
+        const abrirLogin = document.getElementById("abrir-login");
+        const cerrarLogin = document.getElementById("cerrar-login");
+
+        const formLogin = document.getElementById("form-login");
+        const formRegistro = document.getElementById("form-registro");
+
+        const pestanaIniciar = document.getElementById("pestana-iniciar");
+        const pestanaRegistro = document.getElementById("pestana-registro");
+
+        // ABRIR VENTANA
+        function abrirVentana() {
+            modal.classList.add("mostrar");
+            modal.setAttribute("aria-hidden", "false");
+            document.body.classList.add("modal-abierto");
+
+            mostrarLogin();
+            document.getElementById("correo-login").focus();
+        }
+
+        // CERRAR VENTANA
+        function cerrarVentana() {
+            modal.classList.remove("mostrar");
+            modal.setAttribute("aria-hidden", "true");
+            document.body.classList.remove("modal-abierto");
+        }
+
+        abrirLogin.addEventListener("click", abrirVentana);
+        cerrarLogin.addEventListener("click", cerrarVentana);
+
+        // CERRAR AL PRESIONAR FUERA
+        modal.addEventListener("click", function(evento) {
+            if (evento.target === modal) {
+                cerrarVentana();
+            }
+        });
+
+        // CERRAR CON ESCAPE
+        document.addEventListener("keydown", function(evento) {
+            if (evento.key === "Escape" && modal.classList.contains("mostrar")) {
+                cerrarVentana();
+            }
+        });
+
+        // MOSTRAR INICIO DE SESIÓN
+        function mostrarLogin() {
+            formLogin.hidden = false;
+            formRegistro.hidden = true;
+
+            pestanaIniciar.classList.add("activa");
+            pestanaRegistro.classList.remove("activa");
+
+            document.getElementById("mensaje-login").textContent = "";
+            document.getElementById("mensaje-registro").textContent = "";
+        }
+
+        // MOSTRAR REGISTRO
+        function mostrarRegistro() {
+            formLogin.hidden = true;
+            formRegistro.hidden = false;
+
+            pestanaRegistro.classList.add("activa");
+            pestanaIniciar.classList.remove("activa");
+
+            document.getElementById("mensaje-login").textContent = "";
+            document.getElementById("mensaje-registro").textContent = "";
+        }
+
+        pestanaIniciar.addEventListener("click", mostrarLogin);
+        pestanaRegistro.addEventListener("click", mostrarRegistro);
+
+        // MOSTRAR U OCULTAR CONTRASEÑA
+        document.querySelectorAll(".ver-clave").forEach(function(boton) {
+            boton.addEventListener("click", function() {
+                const campo = document.getElementById(boton.dataset.target);
+
+                if (campo.type === "password") {
+                    campo.type = "text";
+                    boton.textContent = "Ocultar";
+                } else {
+                    campo.type = "password";
+                    boton.textContent = "Ver";
+                }
+            });
+        });
+
+        // RESPUESTA PROVISIONAL DEL INICIO DE SESIÓN
+        formLogin.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            document.getElementById("mensaje-login").textContent =
+                "La interfaz está lista. Para iniciar sesión necesitás conectar el sistema de usuarios.";
+        });
+
+        // RESPUESTA PROVISIONAL DEL REGISTRO
+        formRegistro.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            document.getElementById("mensaje-registro").textContent =
+                "El formulario está listo. Para crear cuentas reales necesitás conectar una base de datos.";
+        });
+
+
+        // PUBLICAR Y BUSCAR VIAJES
+        const modalPublicar = document.getElementById("modal-publicar");
+        const modalBuscar = document.getElementById("modal-buscar");
+        const formPublicar = document.getElementById("form-publicar");
+
+        function abrirModalViaje(modalViaje) {
+            modalViaje.classList.add("mostrar");
+            modalViaje.setAttribute("aria-hidden", "false");
+            document.body.classList.add("modal-viaje-abierto");
+        }
+
+        function cerrarModalViaje(modalViaje) {
+            modalViaje.classList.remove("mostrar");
+            modalViaje.setAttribute("aria-hidden", "true");
+
+            if (!document.querySelector(".modal-viaje.mostrar") &&
+                !modal.classList.contains("mostrar")) {
+                document.body.classList.remove("modal-viaje-abierto");
+            }
+        }
+
+        document.getElementById("abrir-publicar").addEventListener("click", function(evento) {
+            evento.preventDefault();
+            abrirModalViaje(modalPublicar);
+        });
+
+        document.getElementById("abrir-buscar").addEventListener("click", function(evento) {
+            evento.preventDefault();
+            mostrarViajes();
+            abrirModalViaje(modalBuscar);
+        });
+
+        document.querySelectorAll("[data-cerrar]").forEach(function(boton) {
+            boton.addEventListener("click", function() {
+                cerrarModalViaje(document.getElementById(boton.dataset.cerrar));
+            });
+        });
+
+        document.querySelectorAll(".modal-viaje").forEach(function(ventana) {
+            ventana.addEventListener("click", function(evento) {
+                if (evento.target === ventana) {
+                    cerrarModalViaje(ventana);
+                }
+            });
+        });
+
+        // Coordenadas aproximadas de las localidades dentro del SVG original.
+        const posicionesViajes = {
+            "Charata": { x: 160, y: 196 },
+            "Resistencia": { x: 365, y: 272 },
+            "Presidencia Roque Sáenz Peña": { x: 280, y: 180 },
+            "Villa Ángela": { x: 280, y: 392 },
+            "General San Martín": { x: 230, y: 116 },
+            "Juan José Castelli": { x: 110, y: 300 },
+            "Machagai": { x: 282, y: 276 },
+            "Quitilipi": { x: 260, y: 258 },
+            "Las Breñas": { x: 135, y: 216 }
+        };
+
+        function obtenerViajes() {
+            try {
+                const guardados = JSON.parse(localStorage.getItem("chacoViajesDemo"));
+                return Array.isArray(guardados) ? guardados : [];
+            } catch (error) {
+                return [];
+            }
+        }
+
+        function guardarViajes(viajes) {
+            localStorage.setItem("chacoViajesDemo", JSON.stringify(viajes));
+        }
+
+        formPublicar.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const origen = document.getElementById("origen-viaje").value;
+            const destino = document.getElementById("destino-viaje").value;
+            const mensaje = document.getElementById("mensaje-publicar");
+
+            if (origen === destino) {
+                mensaje.textContent = "El origen y el destino deben ser diferentes.";
+                return;
+            }
+
+            const viaje = {
+                id: Date.now(),
+                conductor: document.getElementById("nombre-conductor").value.trim(),
+                origen: origen,
+                destino: destino,
+                fecha: document.getElementById("fecha-viaje").value,
+                hora: document.getElementById("hora-viaje").value,
+                asientos: document.getElementById("asientos-viaje").value,
+                precio: document.getElementById("precio-viaje").value,
+                detalles: document.getElementById("detalles-viaje").value.trim()
+            };
+
+            const viajes = obtenerViajes();
+            viajes.push(viaje);
+            guardarViajes(viajes);
+
+            dibujarRutasViajes();
+            formPublicar.reset();
+            mensaje.textContent = "";
+            cerrarModalViaje(modalPublicar);
+            alert("¡Viaje publicado correctamente!");
+        });
+
+        function mostrarViajes() {
+            const lista = document.getElementById("lista-viajes");
+            const viajes = obtenerViajes();
+            lista.replaceChildren();
+
+            if (viajes.length === 0) {
+                const vacio = document.createElement("p");
+                vacio.className = "sin-viajes";
+                vacio.textContent = "Todavía no hay viajes publicados.";
+                lista.appendChild(vacio);
+                return;
+            }
+
+            viajes.slice().reverse().forEach(function(viaje) {
+                const tarjeta = document.createElement("article");
+                tarjeta.className = "tarjeta-viaje";
+
+                const titulo = document.createElement("h3");
+                titulo.textContent = viaje.origen + " → " + viaje.destino;
+
+                const conductor = document.createElement("p");
+                conductor.textContent = "Conductor: " + viaje.conductor;
+
+                const fechaHora = document.createElement("p");
+                fechaHora.textContent = "Fecha: " + viaje.fecha + " | Hora: " + viaje.hora;
+
+                const asientosPrecio = document.createElement("p");
+                asientosPrecio.textContent =
+                    "Asientos: " + viaje.asientos + " | Precio por pasajero: $" + viaje.precio;
+
+                tarjeta.append(titulo, conductor, fechaHora, asientosPrecio);
+
+                if (viaje.detalles) {
+                    const detalles = document.createElement("p");
+                    detalles.textContent = viaje.detalles;
+                    tarjeta.appendChild(detalles);
+                }
+
+                lista.appendChild(tarjeta);
+            });
+        }
+
+        function dibujarRutasViajes() {
+            const grupo = document.getElementById("rutas-dinamicas");
+
+            // El mapa ahora es una imagen fija; los viajes publicados siguen
+            // apareciendo en la lista, pero no se dibujan rutas sobre la imagen.
+            if (!grupo) return;
+
+            grupo.replaceChildren();
+
+            obtenerViajes().forEach(function(viaje) {
+                const inicio = posicionesViajes[viaje.origen];
+                const fin = posicionesViajes[viaje.destino];
+
+                // Si la localidad no está ubicada en el mapa, el viaje sigue apareciendo en la lista.
+                if (!inicio || !fin) return;
+
+                const ruta = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                ruta.setAttribute("d", "M " + inicio.x + " " + inicio.y +
+                    " L " + fin.x + " " + fin.y);
+                ruta.setAttribute("class", "ruta-viaje-publicado");
+                grupo.appendChild(ruta);
+
+                [inicio, fin].forEach(function(punto) {
+                    const circulo = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                    circulo.setAttribute("cx", punto.x);
+                    circulo.setAttribute("cy", punto.y);
+                    circulo.setAttribute("r", "5");
+                    circulo.setAttribute("class", "punto-viaje-publicado");
+                    grupo.appendChild(circulo);
+                });
+            });
+        }
+
+        // Cerrar también los nuevos modales con Escape.
+        document.addEventListener("keydown", function(evento) {
+            if (evento.key === "Escape") {
+                cerrarModalViaje(modalPublicar);
+                cerrarModalViaje(modalBuscar);
+            }
+        });
+
+        dibujarRutasViajes();
+
+    </script>
 
 </body>
 </html>
